@@ -1,0 +1,22 @@
+<div class="travel_block">
+    <h2 class="main_title">Travel with us</h2>
+
+    <div class="blocks wrapper">
+        {% for travel in travels %}
+        <div class="block {{ travel.block_class }}">
+            <img src="img/{{ travel.bg_image }}" alt="">
+            <div class="stars">
+                <img src="img/{{ travel.stars }}" alt="4">
+            </div>
+            <div class="text">
+                <h3>{{ travel.title }}</h3>
+                <p>{{ travel.text }}</p>
+            </div>
+            <div class="price">
+                <div class="old_price">{{ travel.old_price }}</div>
+                <div class="new_price">{{ travel.new_price }}</div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>

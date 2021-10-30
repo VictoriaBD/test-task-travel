@@ -1,0 +1,17 @@
+<div class="journal_block wrapper">
+    <h2 class="main_title">Our journal</h2>
+
+    <div class="blocks">
+        {% for item in journal %}
+        <div class="block {{ item.picture_class }} picture">
+            <img src="img/{{ item.picture_name }}" alt="">
+        </div>
+        <div class="block {{ item.text_class }} text">
+            <h5>{{ item.title_h5 }}</h5>
+            <h3>{{ item.title_h3 }}</h3>
+            <p>{{ item.text }}</p>
+            <i>{{ item.number }}</i>
+        </div>
+        {% endfor %}
+    </div>
+</div>

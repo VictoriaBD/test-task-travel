@@ -1,0 +1,386 @@
+@import _reset
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap')
+
+body
+    font: 14px 'Open Sans', sans-serif
+    color: #777777
+
+.main_wrapper
+    min-width: 450px
+
+.wrapper
+    width: 1140px
+    margin: auto
+
+.main_title
+    position: relative
+    font-size: 30px
+    color: #2c2e37
+    text-align: center
+    text-transform: uppercase
+    letter-spacing: 3px
+    padding-top: 33px
+    margin: 70px 0
+
+    &::before
+        content: ""
+        display: block
+        width: 81px
+        height: 7px
+        background: url('../img/waves.png') no-repeat
+        position: absolute
+        top: 0
+        left: 50%
+        margin-left: -40px
+
+/* 'Our journal' block
+%triangle
+    content: ''
+    position: absolute
+    z-index: 10
+    border: 10px solid transparent
+
+.journal_block
+    .blocks
+        display: -webkit-box
+        display: -ms-flexbox
+        display: flex
+        -ms-flex-wrap: wrap
+        flex-wrap: wrap
+        -webkit-box-shadow: 0 0 21px 0 rgba(6, 6, 6, 0.13)
+        box-shadow: 0 0 21px 0 rgba(6, 6, 6, 0.13)
+
+        .block
+            width: 33.33%
+            height: 380px
+            text-align: center
+            overflow: hidden
+            position: relative
+
+            h5
+                font-size: 11px
+                font-weight: bold
+                color: #16b5ef
+                text-transform: uppercase
+                letter-spacing: 1px
+                margin: 42px 0 48px
+            h3
+                font-size: 16px
+                font-weight: bold
+                color: #212121
+                text-transform: uppercase
+                letter-spacing: 2px
+                line-height: 24px
+            p
+                font-size: 14px
+                color: #777777
+                line-height: 1.7
+                margin: 17px 20px 31px
+            i
+                font: italic 14px Times New Roman, serif
+                color: #212121
+        .block_03
+            h3
+                margin-bottom: 41px
+            
+        .picture
+            font-size: 0
+
+            img
+                position: absolute
+                left: 50%
+                margin-left: -190px
+        
+        .text
+            padding: 0 35px
+            -webkit-box-sizing: border-box
+            box-sizing: border-box
+
+        .block_01.picture::before
+            @extend %triangle
+            border-right: 10px solid white
+            right: 0
+            top: 50px
+        .block_02.picture::before
+            @extend %triangle
+            border-left: 10px solid white
+            left: 0
+            top: 50px
+        .block_03.picture::before
+            @extend %triangle
+            border-bottom: 10px solid white
+            left: 50px
+            bottom: 0
+/* ----------------------------------------
+
+/* 'Travel with us' block
+.travel_block
+    background: url('../img/worldmap-dots.jpg') 50% -3% no-repeat
+    padding-bottom: 455px
+
+    .blocks
+        display: -webkit-box
+        display: -ms-flexbox
+        display: flex
+        -webkit-box-pack: justify
+        -ms-flex-pack: justify
+        justify-content: space-between
+        margin-top: 89px
+
+        .block
+            display: -webkit-box
+            display: -ms-flexbox
+            display: flex
+            -webkit-box-orient: vertical
+            -webkit-box-direction: normal
+            -ms-flex-direction: column
+            flex-direction: column
+            -webkit-box-pack: justify
+            -ms-flex-pack: justify
+            justify-content: space-between
+            -webkit-box-sizing: border-box
+            box-sizing: border-box
+            width: 200px
+            height: 382px
+            position: relative
+            color: #ffffff
+            overflow: hidden
+            border-radius: 5px
+
+            > img
+                position: absolute
+            
+            > div
+                position: relative
+                z-index: 3
+            
+            .stars
+                padding-left: 6px
+
+            .text
+                padding: 17px 5px 0 20px
+
+            h3
+                font-weight: normal
+                font-size: 28px
+                margin: 0 0 10px
+
+            p
+                font-size: 16px
+                margin: 5px 0
+            
+            .price
+                padding: 0 10px 14px 20px
+
+            .old_price
+                float: left
+                font-size: 18px
+                text-decoration: line-through
+                margin-top: 8px
+
+            .new_price
+                float: right
+                font-size: 26px
+                font-weight: 900
+/* ----------------------------------------
+
+/* 'Contacts' block
+.contacts_block
+    background: url('../img/contacts-bg.jpg') 50% 100% no-repeat
+    padding: 220px 0 150px
+
+    .block
+        width: 514px
+        -webkit-box-sizing: border-box
+        box-sizing: border-box
+        margin: auto
+        padding: 30px 30px 50px
+        text-align: center
+        border-radius: 8px
+        position: relative
+        z-index: 1
+        background: inherit
+        overflow: hidden
+        -webkit-box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.2)
+        box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.2)
+
+        &::before
+            content: ""
+            position: absolute
+            background: inherit
+            background-position: 50% 77.5%
+            z-index: -1
+            top: -60px
+            left: 0
+            right: -70px
+            bottom: 0
+            box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5)
+            filter: blur(30px)
+            -webkit-filter: blur(30px)
+            margin: -20px
+
+        .main_title_blue
+            font-size: 36px
+            font-weight: bold
+            color: #36aeea
+            text-transform: uppercase
+            letter-spacing: 5px
+            margin: 0 0 -4px
+
+        p
+            font-size: 16px
+            color: #383e4a
+            margin: 5px 0 12px 
+
+        input
+            font-size: 18px
+            width: 100%
+            -webkit-box-sizing: border-box
+            box-sizing: border-box
+            border: 0
+            border-radius: 4px
+            padding: 20px 18px
+            margin-top: 20px
+
+        input[type="submit"]
+            background-color: #36aeea
+            color: #fff
+            font-size: 16px
+            font-weight: bold
+            text-transform: uppercase
+            letter-spacing: 3px
+            padding: 25px 18px
+            cursor: pointer
+
+            &:hover
+                background-color: #16b5ef
+/* ----------------------------------------
+
+
+@media screen and (max-width: 1140px)
+    .wrapper
+        width: 90%
+    
+    .journal_block
+        .blocks
+            .text
+                padding: 0 2%
+
+                p
+                    margin-left: 0
+                    margin-right: 0
+    
+    .travel_block
+        padding-bottom: 45px
+
+        .blocks
+            -ms-flex-wrap: wrap
+            flex-wrap: wrap
+            -webkit-box-pack: center
+            -ms-flex-pack: center
+            justify-content: center
+
+            .block_02
+                margin: 0 10% 30px
+
+            .block_04
+                margin-right: 10%
+
+@media screen and (max-width: 1024px)
+    .journal_block
+        .blocks
+            -webkit-box-pack: justify
+            -ms-flex-pack: justify
+            justify-content: space-between
+
+            .picture
+                width: 380px
+
+            .text
+                width: 42%
+            
+            .block_01.picture
+                order: 1
+            .block_01.text
+                order: 2
+                margin: auto
+            .block_02.picture
+                order: 4
+            .block_02.text
+                order: 3
+                margin: auto
+            .block_03.picture
+                order: 5
+            .block_03.text
+                order: 6
+                margin: auto
+
+            .block_03.picture::before
+                border-right: 10px solid white
+                border-bottom: 10px solid transparent
+                left: auto
+                bottom: auto
+                right: 0
+                top: 50px
+
+@media screen and (max-width: 845px)
+    .journal_block
+        .blocks
+            .picture
+                width: 50%
+
+            .text
+                width: 50%
+                padding: 0 5%
+    
+    .travel_block
+        .blocks
+            .block_02
+                margin-left: 5%
+                margin-right: 5%
+
+@media screen and (max-width: 768px)
+    .journal_block
+        .blocks
+            .block
+                h5
+                    margin: 25px 0 15px
+            .text
+                padding: 0 4%
+    
+    .travel_block
+        background-position-y: 100%
+
+        .blocks
+            .block
+                margin: 0 5% 20px
+
+@media screen and (max-width: 640px)
+    .journal_block
+        .blocks
+            .block_01
+                p
+                    margin-bottom: 25px
+            .block_02
+                p
+                    margin-bottom: 10px
+            .block_03
+                h3
+                    margin-bottom: 20px
+    
+    .travel_block
+        .blocks
+            .block
+                width: 190px
+                margin: 0 1% 20px
+    
+    .contacts_block
+        .block
+            width: 80%
+
+@media screen and (max-width: 450px)
+    .journal_block
+        .blocks
+            .block_01
+                h5, h3, p
+                    margin: 10px 0
